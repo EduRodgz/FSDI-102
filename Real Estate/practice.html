@@ -19,6 +19,27 @@
             border: 1px solid yellowgreen;
             padding: 5px;
         }
+
+        table,th{
+            font-family: arial;
+            border: 1px solid rgb(68, 145, 233);
+            border-collapse: collapse;
+            background-color: rgb(60, 84, 224);
+        }
+        table{
+            margin-bottom: 10px;
+        }
+        th,td{
+            padding: 10px;
+            text-align: center;
+        }
+        .error{
+            background-color: rgb(60, 84, 224);
+            color: rgb(0, 0, 0);
+        }
+        .age{
+            padding-right: 100px;
+        }
     </style>
 </head>
 <body>
@@ -34,5 +55,56 @@
         </div>
     </div>
 
+    <h2>Tables</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>EmpId</th> 
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th class="age">Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E342</td>           
+                <td>Bill</td>              
+                <td>Evans</td>           
+                <td>Bill@devcurry@.com</td>   
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>E343</td>           
+                <td>Laura</td>              
+                <td>Matt</td>           
+                <td>Laura@devcurry.com</td>   
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>E344</td>           
+                <td>Ram</td>              
+                <td></td>           
+                <td>Ram@devcurry.com</td>   
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>E345</td>           
+                <td>Yuri</td>              
+                <td></td>           
+                <td>Yuri@devcurry.com</td>   
+                <td>39</td>
+            </tr>
+            <tr>
+                <td>E346</td>           
+                <td>Asha</td>              
+                <td></td>           
+                <td>Asha@devcurry.com</td>   
+                <td>42</td>
+            </tr>
+        </tbody>
+        
+    </table>
 </body>
 </html>
