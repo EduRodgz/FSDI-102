@@ -22,6 +22,11 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+@media(max-width:768px){
+    .container{
+        width: 90%;
+    }
+}
 .two-columns{
     display: flex;
 }
@@ -52,9 +57,33 @@ img{
     color: white;
 
 }
+.mobile-menu{
+    display: none;
+}
+.bars{
+    width: 20px;
+}
+@media(max-width:768px){
+    .mobile-menu{
+        display: block;
+    }
+    nav#navigation{
+        display: none;
+    }
+}
+#navigation:target{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
 /*about us container*/
 .about-us-container{
     display: flex;
+}
+@media(max-width:768px){
+    .about-us-container{
+        flex-direction: column;
+    }
 }
 .about-item{
     padding: 10px;
@@ -74,11 +103,20 @@ img{
 .announcement-container{
     display: flex;
 }
-
 .an-item{
     background-color: #dedede;
     margin-right: 10px;
 }
+
+@media(max-width:768px){
+    .announcement-container{
+        flex-direction: column;
+    }
+    .an-item{
+        margin-bottom: 10px;
+    }
+}
+
 .an-item-img{
     max-width: 100%;
 }
@@ -199,4 +237,37 @@ label, legend{
     font-weight: 700;
     border: none;
     border-radius: 5px;
+}
+.tr-label{
+    color: blueviolet;
+}
+.th-label{
+    color: green;
+    padding-right: 10px;
+}
+.th-lost{
+    color: red;
+    padding-right: 10px;
+}
+.th-exp{
+    color: rgb(184, 184, 50);
+    padding-right: 10px;
+}
+.th-cus{
+    color: orange;
+    padding-right: 10px;
+}
+.th-year{
+    color: black;
+    padding-right: 10px;
+}
+.th-empl{
+    color: pink;
+    margin-right: 10px;
+}
+.table-class{
+    padding-left: 19%;
+}
+.blog-body{
+    background-color: rgb(228, 178, 228);
 }
