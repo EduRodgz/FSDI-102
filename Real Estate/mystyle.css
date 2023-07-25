@@ -22,6 +22,9 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+.two-columns{
+    display: flex;
+}
 /*header*/
 .header-container{
     background-image: url(./img/header.jpg);
@@ -161,14 +164,31 @@ fieldset{
     border-radius: 2px;
 
 }
-
-.form-control label, legend{
+.form-control select{
+    width: 100%;
+    background-color: #dedede;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+}
+.form-control-contact{
+    font-size: small;
+    color: #5f5e5e;
+}
+label, legend{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 14px;
     font-weight: 700;
     
 }
+.form-control-radio{
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
 .btn-form{
     background-color: rgb(88, 211, 88);
     color: white;
